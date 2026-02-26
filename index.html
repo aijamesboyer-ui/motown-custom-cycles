@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Motown Custom Cycles</title>
+<meta name="theme-color" content="#111111" />
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<main class="wrap">
+<h1>Detroit Bred. Built to Last.</h1>
+<p>Motown Custom Cycles — Repair, restoration, and custom builds.</p>
+<a class="btn" href="tel:+13135551234">Call Now</a>
+</main>
+
+<script>
+if ("serviceWorker" in navigator) {
+window.addEventListener("load", () => {
+navigator.serviceWorker.register("./service-worker.js");
+});
+}
+</script>
+</body>
+</html>
