@@ -1,26 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Motown Custom Cycles</title>
-<meta name="theme-color" content="#111111" />
-<link rel="manifest" href="./manifest.webmanifest" />
-<link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
-<main class="wrap">
-<h1>Detroit Bred. Built to Last.</h1>
-<p>Motown Custom Cycles — Repair, restoration, and custom builds.</p>
-<a class="btn" href="tel:+13135551234">Call Now</a>
-</main>
+<title>Motown Custom Cycles | Detroit Heritage</title>
 
-<script>
-if ("serviceWorker" in navigator) {
-window.addEventListener("load", () => {
-navigator.serviceWorker.register("./service-worker.js");
-});
+<meta name="theme-color" content="#0d0d0d" />
+<link rel="manifest" href="./manifest.webmanifest" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+body {
+font-family: 'Roboto Condensed', sans-serif;
+background-color: #0d0d0d;
+color: #e5e5e5;
 }
-</script>
-</body>
-</html>
+h1, h2, h3 {
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+.metal-gradient { background: linear-gradient(145deg, #1a1a1a, #2d3436); }
+.pinstripe-border { border-left: 4px solid #d63031; }
+</style>
+</head>
+<body class="bg-black">
+
+<header class="relative h-screen flex items-center justify-center text-center bg-cover bg-center"
+style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=2070');">
+<div class="px-4">
+<h1 class="text-5xl md:text-7xl font-bold text-white mb-4">
+Detroit Bred. <span class="text-red-600">Built to Last.</span>
+</h1>
+<p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+Precision Grit by Dave 'Easy' Arzola. Over 30 years of Michigan Avenue mastery.
+</p>
+<a href="#contact" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-sm transition duration-300 uppercase tracking-widest">
+Book Your Restoration
+</a>
+</div>
+</header>
+
+<section class="py-20 px-6 max-w-5xl mx-auto">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="pinstripe-border pl-6">
+<h2 class="text-4xl font-bold mb-6 text-white">The Heritage: 40 Years of Detroit Grit</h2>
+<p class="text-gray-400 mb-4 text-lg">
+Founded by Dave 'Easy' Arzola—a man who was already customizing mini-bikes at age 11—our roots run as deep as the city’s industrial soul.
+</p>
+<p class="text-gray-400 text-lg">
+From frame-up restorations to high-performance engine work, every bike that leaves our floor is a piece of Detroit history.
+</p>
+</div>
+<div class="bg-zinc-900 h-80 rounded-lg shadow-2xl flex items-center justify-center border border-zinc-800">
+<span class="text-zinc-700 uppercase tracking-tighter text-sm">[ Insert Shop Photo Here ]</span>
+</div>
+</div>
+</section>
+
+<section class="py-20 bg-zinc-950 px-6">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-3xl font-bold text-center mb-16 underline decoration-red-600 underline-offset-8">Our Services</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="metal-gradient p-8 border border-zinc-800 rounded-sm">
+<h3 class="text-xl font-bold mb-4 text-red-500">Full Restoration</h3>
+<p class="text-gray-400">Stripped to the bare metal and rebuilt with the precision and grit the Motor City is known for.</p>
+</div>
+<div class="metal-gradient p-8 border border-zinc-800 rounded-sm">
+<h3 class="text-xl font-bold mb-4 text-red-500">Custom Fabrication</h3>
+<p class="text-gray-400">Bespoke frames, one-off handlebars, and unique sheet metal work. If you can dream it, we can weld it.</p>
+</div>
+<div class="metal-gradient p-8 border border-zinc-800 rounded-sm">
+<h3 class="text-xl font-bold mb-4 text-red-500">Engine Performance</h3>
+<p class="text-gray-400">V-Twin mastery from top-to-bottom overhauls to high-performance tuning that outlasts the street.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="py-20 px-6 max-w-3xl mx-auto">
+<h2 class="text-4xl font-bold text-center mb-4">Start Your Build</h2>
+<p class="text-center text-gray-500 mb-12 uppercase tracking-widest">Consultations by Appointment Only</p>
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
